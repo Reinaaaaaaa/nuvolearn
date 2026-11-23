@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infografis Alur Pengembangan - NUVOLEARN</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen py-10 px-4 sm:px-6 lg:px-8 selection:bg-blue-500 selection:text-white">
+
+  <div class="max-w-5xl mx-auto space-y-8">
+
+    <!-- Top Action Bar -->
+    <div class="flex flex-wrap items-center justify-between gap-4 bg-slate-800/80 backdrop-blur p-4 rounded-2xl border border-slate-700">
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-xs font-semibold text-slate-200 transition">
+          ← Kembali ke Beranda
+        </a>
+        <span class="text-xs text-slate-400">Peta Jalan & Alur Rekayasa Perangkat Lunak Pembelajaran</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button onclick="downloadInfographicImage()" class="px-5 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/30 transition flex items-center gap-2">
+          <span>📥</span> Unduh Poster Infografis (PNG HD)
+        </button>
+      </div>
+    </div>
+
+    <!-- INFOGRAPHIC CANVAS CONTAINER (POSTER UTAMA) -->
+    <div id="posterCard" class="bg-gradient-to-b from-[#0b172a] via-[#0f2347] to-[#0b172a] rounded-3xl p-6 sm:p-10 border-2 border-blue-500/30 shadow-2xl relative overflow-hidden">
+      
+      <!-- Background Glow & Grid Effect -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-96 bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Header Poster -->
+      <div class="text-center relative z-10 space-y-3 pb-8 border-b border-blue-500/20">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-extrabold uppercase tracking-widest">
+          <span>⚛️</span> Roadmap Rekayasa Media Pembelajaran
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
+          Alur Pembuatan <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-cyan-300">NUVOLEARN</span>
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
+          Tahapan komprehensif dari perancangan pedagogis kurikulum, sketsa wireframe UI/UX, pengodean notasi KaTeX ilmiah, pengembangan simulasi partikel, hingga deployment GitHub Pages.
+        </p>
+      </div>
+
+      <!-- 6 TAHAP PROSES (TIMELINE INFOGRAFIS) -->
+      <div class="relative z-10 pt-10 space-y-8">
+        
+        <!-- Garis Penghubung Tengah (Vertikal di Desktop) -->
+        <div class="hidden md:block absolute left-1/2 top-14 bottom-10 w-0.5 bg-gradient-to-b from-blue-500 via-cyan-400 to-emerald-400 -translate-x-1/2 opacity-30"></div>
+
+        <!-- TAHAP 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-5 md:text-right space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded bg-blue-900/60 border border-blue-400/30 text-blue-300 text-2xs font-bold uppercase tracking-wider">Tahap 01</span>
+            <h2 class="text-lg sm:text-xl font-bold text-white">Analisis Kebutuhan & Kurikulum</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Memetakan Capaian Pembelajaran (CP) dan Alur Tujuan Pembelajaran (ATP) Fisika Fase F (Kurikulum Merdeka Kelas XII SMA). Merumuskan 6 modul esensial dari struktur nukleon hingga proteksi radiasi ALARA.
+            </p>
+            <div class="flex flex-wrap md:justify-end gap-1.5 pt-1">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-blue-300 border border-slate-700">Fase F Merdeka</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-blue-300 border border-slate-700">6 Modul Inti</span>
+            </div>
+          </div>
+          
+          <div class="hidden md:flex md:col-span-2 justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center text-white font-black text-base shadow-lg shadow-blue-500/30 border border-white/20">
+              01
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 shadow-md">
+            <div class="text-2xs text-slate-400 font-mono mb-1">OUTPUT KUNCI:</div>
+            <ul class="text-xs text-slate-200 space-y-1">
+              <li>✔ Dokumen CP Elemen Pemahaman & Keterampilan Proses</li>
+              <li>✔ Penyelarasan materi sesuai BSKAP No. 033/H/KR/2022</li>
+              <li>✔ Batasan materi fisika modern SMA berstandar ilmiah</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TAHAP 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="order-2 md:order-1 md:col-span-5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 shadow-md">
+            <div class="text-2xs text-slate-400 font-mono mb-1">OUTPUT KUNCI:</div>
+            <ul class="text-xs text-slate-200 space-y-1">
+              <li>✔ Sketsa Wireframe 5 Panel (Beranda, Materi, Simulasi, Kuis, Panduan)</li>
+              <li>✔ Arsitektur Modular: Halaman materi dipecah per subtopik</li>
+              <li>✔ Palet warna profesional (White / Royal Blue / Sky Accent)</li>
+            </ul>
+          </div>
+
+          <div class="order-1 md:order-2 md:col-span-2 flex justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-600 to-sky-400 flex items-center justify-center text-white font-black text-base shadow-lg shadow-cyan-500/30 border border-white/20">
+              02
+            </div>
+          </div>
+
+          <div class="order-3 md:col-span-5 space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded bg-cyan-900/60 border border-cyan-400/30 text-cyan-300 text-2xs font-bold uppercase tracking-wider">Tahap 02</span>
+            <h2 class="text-lg sm:text-xl font-bold text-white">Desain Wireframe UI/UX & Arsitektur</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Menterjemahkan kebutuhan pengguna ke dalam wireframe terstruktur. Mengubah konsep halaman tunggal menjadi arsitektur halaman terpisah (*multi-page*) agar materi mudah dipelajari per topik tanpa membebani memori siswa.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-cyan-300 border border-slate-700">Multi-page Modular</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-cyan-300 border border-slate-700">Responsive Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAHAP 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-5 md:text-right space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded bg-indigo-900/60 border border-indigo-400/30 text-indigo-300 text-2xs font-bold uppercase tracking-wider">Tahap 03</span>
+            <h2 class="text-lg sm:text-xl font-bold text-white">Integrasi Notasi KaTeX & Terminologi Ilmiah</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Penerapan engine LaTeX (KaTeX) untuk persamaan kuantum dan reaksi inti. Standardisasi penulisan isotop baku (${}^{A}_{Z}\text{X}$) guna menghindari error sintaks preskrip, serta pembaharuan seluruh teks menjadi terminologi fisika tingkat lanjut.
+            </p>
+            <div class="flex flex-wrap md:justify-end gap-1.5 pt-1">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-indigo-300 border border-slate-700">KaTeX Auto-render</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-indigo-300 border border-slate-700">Relativistik Einstein</span>
+            </div>
+          </div>
+
+          <div class="hidden md:flex md:col-span-2 justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-500 flex items-center justify-center text-white font-black text-base shadow-lg shadow-indigo-500/30 border border-white/20">
+              03
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 shadow-md">
+            <div class="text-2xs text-slate-400 font-mono mb-1">OUTPUT KUNCI:</div>
+            <ul class="text-xs text-slate-200 space-y-1">
+              <li>✔ Formula Defek Massa: $\Delta m = [Zm_p + (A-Z)m_n] - m_{\text{inti}}$</li>
+              <li>✔ Kurva $E_b/A$, SEMF Weizsäcker, dan Kinetika $N(t) = N_0 e^{-\lambda t}$</li>
+              <li>✔ Eliminasi seluruh kode merah LaTeX mentah di browser</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TAHAP 4 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="order-2 md:order-1 md:col-span-5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 shadow-md">
+            <div class="text-2xs text-slate-400 font-mono mb-1">OUTPUT KUNCI:</div>
+            <ul class="text-xs text-slate-200 space-y-1">
+              <li>✔ Kanvas 3D Partikel Proton (+e) & Neutron (0) dengan gaya kuat</li>
+              <li>✔ Tombol Preset Cepat ($^1\text{H}, ^4\text{He}, ^{12}\text{C}, ^{16}\text{O}, ^{56}\text{Fe}$)</li>
+              <li>✔ Lab Daya Tembus Sinar $\alpha, \beta, \gamma$ & Reaksi Berantai Fisi</li>
+            </ul>
+          </div>
+
+          <div class="order-1 md:order-2 md:col-span-2 flex justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center text-white font-black text-base shadow-lg shadow-purple-500/30 border border-white/20">
+              04
+            </div>
+          </div>
+
+          <div class="order-3 md:col-span-5 space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded bg-purple-900/60 border border-purple-400/30 text-purple-300 text-2xs font-bold uppercase tracking-wider">Tahap 04</span>
+            <h2 class="text-lg sm:text-xl font-bold text-white">Laboratorium Virtual & Simulasi Kanvas</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Membangun simulasi interaktif berbasis HTML5 Canvas murni tanpa dependensi eksternal yang lambat. Memperbaiki bug layar hitam kanvas (*null-safety guard*) dan menambahkan rendering pencahayaan 3D untuk nukleon.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-purple-300 border border-slate-700">HTML5 Canvas 60 FPS</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-purple-300 border border-slate-700">In-silico Experiment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAHAP 5 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-5 md:text-right space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded bg-amber-900/60 border border-amber-400/30 text-amber-300 text-2xs font-bold uppercase tracking-wider">Tahap 05</span>
+            <h2 class="text-lg sm:text-xl font-bold text-white">Asesmen Formatif, Maskot & Kuis Interaktif</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Menyusun sistem kuis bertahap (*stepper*) dengan kartu "💡 Ingat!" dan maskot atom pintar. Memperbaiki bug label radio opsi ("false false"), menambahkan pembahasan ilmiah seketika, dan mengaitkan skor dengan capaian kelulusan.
+            </p>
+            <div class="flex flex-wrap md:justify-end gap-1.5 pt-1">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-amber-300 border border-slate-700">Instant Feedback</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-amber-300 border border-slate-700">Gamifikasi Kuis</span>
+            </div>
+          </div>
+
+          <div class="hidden md:flex md:col-span-2 justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-600 to-yellow-500 flex items-center justify-center text-white font-black text-base shadow-lg shadow-amber-500/30 border border-white/20">
+              05
+            </div>
+          </div>
+
+          <div class="md:col-span-5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 shadow-md">
+            <div class="text-2xs text-slate-400 font-mono mb-1">OUTPUT KUNCI:</div>
+            <ul class="text-xs text-slate-200 space-y-1">
+              <li>✔ Sistem 1 Soal per Halaman dengan progress bar dinamis</li>
+              <li>✔ Pembahasan terperinci rumus waktu paruh & hukum pergeseran</li>
+              <li>✔ Perbaikan 100% bug teks label radio button</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TAHAP 6 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="order-2 md:order-1 md:col-span-5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/80 shadow-md">
+            <div class="text-2xs text-slate-400 font-mono mb-1">OUTPUT KUNCI:</div>
+            <ul class="text-xs text-slate-200 space-y-1">
+              <li>✔ Bagian resmi Capaian Pembelajaran (CP) & ATP di `panduan.html`</li>
+              <li>✔ Navigasi mulus antar-halaman melalui relative link & anchor</li>
+              <li>✔ Deployment live via GitHub Pages dengan branch main</li>
+            </ul>
+          </div>
+
+          <div class="order-1 md:order-2 md:col-span-2 flex justify-center">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-400 flex items-center justify-center text-white font-black text-base shadow-lg shadow-emerald-500/30 border border-white/20">
+              06
+            </div>
+          </div>
+
+          <div class="order-3 md:col-span-5 space-y-2">
+            <span class="inline-block px-2.5 py-1 rounded bg-emerald-900/60 border border-emerald-400/30 text-emerald-300 text-2xs font-bold uppercase tracking-wider">Tahap 06</span>
+            <h2 class="text-lg sm:text-xl font-bold text-white">Sinkronisasi Capaian Belajar & Deployment Cloud</h2>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Melengkapi bagian Capaian Pembelajaran (CP) dan Glosarium yang sebelumnya belum lengkap pada halaman panduan, menghubungkan seluruh link beranda ke `#capaian`, serta mempublikasikan repositori ke GitHub Pages secara live.
+            </p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-emerald-300 border border-slate-700">GitHub Pages</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-3xs text-emerald-300 border border-slate-700">Live Production</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Poster -->
+      <div class="mt-12 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <div class="flex items-center gap-2">
+          <span class="text-blue-400 font-bold">NUVOLEARN</span>
+          <span>•</span>
+          <span>Kurikulum Merdeka Fase F Fisika Inti</span>
+        </div>
+        <div class="font-mono text-3xs">Tahun Pengembangan: 2026</div>
+      </div>
+
+    </div>
+
+    <!-- Hidden Canvas for Image Generation -->
+    <canvas id="exportCanvas" width="1600" height="2200" class="hidden"></canvas>
+
+  </div>
+
+  <script>
+    // Fungsi untuk menghasilkan poster PNG berkualitas tinggi langsung ke komputer pengguna
+    function downloadInfographicImage() {
+      const canvas = document.getElementById('exportCanvas');
+      const ctx = canvas.getContext('2d');
+
+      // Ukuran Kanvas Poster HD (1600 x 2200)
+      const w = 1600;
+      const h = 2200;
+
+      // 1. Background Gradient
+      const bgGrad = ctx.createLinearGradient(0, 0, 0, h);
+      bgGrad.addColorStop(0, '#0b172a');
+      bgGrad.addColorStop(0.5, '#0f284e');
+      bgGrad.addColorStop(1, '#07101d');
+      ctx.fillStyle = bgGrad;
+      ctx.fillRect(0, 0, w, h);
+
+      // Subtle Tech Glows
+      ctx.save();
+      const radGlow = ctx.createRadialGradient(w/2, 200, 50, w/2, 200, 600);
+      radGlow.addColorStop(0, 'rgba(59, 130, 246, 0.25)');
+      radGlow.addColorStop(1, 'rgba(59, 130, 246, 0)');
+      ctx.fillStyle = radGlow;
+      ctx.fillRect(0, 0, w, 800);
+      ctx.restore();
+
+      // Outer Elegant Border
+      ctx.strokeStyle = 'rgba(59, 130, 246, 0.4)';
+      ctx.lineWidth = 6;
+      ctx.strokeRect(30, 30, w - 60, h - 60);
+
+      // Inner Accent Border
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+      ctx.lineWidth = 1.5;
+      ctx.strokeRect(45, 45, w - 90, h - 90);
+
+      // 2. HEADER
+      ctx.textAlign = 'center';
+      
+      // Badge
+      ctx.fillStyle = '#38bdf8';
+      ctx.font = 'bold 22px "Plus Jakarta Sans", sans-serif';
+      ctx.fillText('⚛️  ROADMAP REKAYASA MEDIA PEMBELAJARAN DIGITAL', w / 2, 110);
+
+      // Big Title
+      ctx.fillStyle = '#ffffff';
+      ctx.font = '900 64px "Plus Jakarta Sans", sans-serif';
+      ctx.fillText('ALUR PENGEMBANGAN NUVOLEARN', w / 2, 185);
+
+      // Subtitle
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '500 24px "Plus Jakarta Sans", sans-serif';
+      ctx.fillText('Dari Perancangan Kurikulum Merdeka Fase F Hingga Deployment GitHub Pages', w / 2, 235);
+
+      // Divider Line
+      ctx.strokeStyle = 'rgba(59, 130, 246, 0.3)';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(120, 275);
+      ctx.lineTo(w - 120, 275);
+      ctx.stroke();
+
+      // Timeline Vertical Center Line
+      const startY = 350;
+      const stepGap = 290;
+      ctx.strokeStyle = 'rgba(56, 189, 248, 0.25)';
+      ctx.lineWidth = 4;
+      ctx.setLineDash([8, 8]);
+      ctx.beginPath();
+      ctx.moveTo(w / 2, startY);
+      ctx.lineTo(w / 2, startY + stepGap * 5 + 40);
+      ctx.stroke();
+      ctx.setLineDash([]); // reset
+
+      // 3. TAHAP 1 s.d. 6
+      const steps = [
+        {
+          no: "01",
+          tag: "ANALISIS & PERENCANAAN",
+          title: "Analisis Kebutuhan & Kurikulum Merdeka",
+          desc: "Penyelarasan Capaian Pembelajaran (CP) dan Alur Tujuan Pembelajaran (ATP) Fase F (Kelas XII SMA). Memformulasikan 6 modul esensial fisika modern dari struktur nukleon hingga proteksi ALARA.",
+          key: "Output: Silabus modular, rumusan 6 TP, integrasi dimensi Profil Pelajar Pancasila.",
+          color: "#3b82f6"
+        },
+        {
+          no: "02",
+          tag: "UI/UX WIREFRAMING",
+          title: "Desain Wireframe & Arsitektur Multi-Page",
+          desc: "Merancang tata letak berdasarkan sketsa wireframe 5 panel (Beranda, Materi, Simulasi, Kuis, Panduan). Memecah konten ke halaman materi terpisah (materi-1 s.d. materi-6) agar terstruktur rapi.",
+          key: "Output: Arsitektur web modular, tata letak responsif HP/Laptop, tema warna Royal Blue.",
+          color: "#06b6d4"
+        },
+        {
+          no: "03",
+          tag: "SCIENTIFIC LATEX ENGINE",
+          title: "Integrasi Formula KaTeX & Bahasa Ilmiah",
+          desc: "Menerapkan pustaka KaTeX untuk rendering presisi persamaan kuantum dan reaksi inti. Standardisasi notasi isotop formal ${}^{A}_{Z}\\text{X}$ untuk mengeliminasi seluruh galat teks merah di browser.",
+          key: "Output: KaTeX auto-render, defek massa Einstein, kurva Eb/A Besi-56, model SEMF.",
+          color: "#6366f1"
+        },
+        {
+          no: "04",
+          tag: "VIRTUAL LAB SIMULATION",
+          title: "Pemrograman Laboratorium Kanvas Interaktif",
+          desc: "Membangun 3 simulasi berbasis HTML5 Canvas: 'Build a Nucleus' (model 3D proton & neutron dengan aura gaya kuat), 'Lab Daya Tembus Radiasi', dan 'Simulasi Fisi Berantai U-235'.",
+          key: "Output: Kanvas interaktif 60 FPS bebas error, tombol preset cepat unsur penting.",
+          color: "#a855f7"
+        },
+        {
+          no: "05",
+          tag: "FORMATIVE ASSESSMENT",
+          title: "Sistem Asesmen Kuis & Gamifikasi Belajar",
+          desc: "Membangun sistem kuis bertahap (stepper) 1 soal per layar dengan maskot atom toga. Menyediakan kotak tips 'Ingat!', pembahasan ilmiah seketika, dan perbaikan bug pilihan ganda.",
+          key: "Output: Umpan balik diagnostik seketika, pelacak skor, persiapan E-Sertifikat digital.",
+          color: "#f59e0b"
+        },
+        {
+          no: "06",
+          tag: "CLOUD DEPLOYMENT",
+          title: "Kelengkapan Capaian Belajar & Rilis Web",
+          desc: "Melengkapi bagian Capaian Pembelajaran (CP) dan Glosarium pada panduan.html, mengaitkan seluruh tombol beranda ke #capaian, serta mempublikasikan situs secara live via GitHub Pages.",
+          key: "Output: Web aktif di GitHub Pages, navigasi tanpa celah, siap diakses siswa & guru.",
+          color: "#10b981"
+        }
+      ];
+
+      steps.forEach((step, idx) => {
+        const y = startY + idx * stepGap;
+        const isLeft = (idx % 2 === 0);
+
+        // Center Step Circle
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(w / 2, y, 40, 0, Math.PI * 2);
+        ctx.fillStyle = '#0f284e';
+        ctx.fill();
+        ctx.strokeStyle = step.color;
+        ctx.lineWidth = 4;
+        ctx.stroke();
+
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 26px "Plus Jakarta Sans", sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(step.no, w / 2, y);
+        ctx.restore();
+
+        // Card Box
+        const cardW = 620;
+        const cardH = 220;
+        const cardX = isLeft ? (w / 2 - 80 - cardW) : (w / 2 + 80);
+        const cardY = y - cardH / 2;
+
+        // Card Background
+        ctx.fillStyle = 'rgba(15, 33, 64, 0.85)';
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
+        ctx.lineWidth = 2;
+        roundRect(ctx, cardX, cardY, cardW, cardH, 20, true, true);
+
+        // Colored Top/Left Accent Bar
+        ctx.fillStyle = step.color;
+        roundRect(ctx, isLeft ? (cardX + cardW - 8) : cardX, cardY, 8, cardH, 4, true, false);
+
+        // Content Text inside card
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+
+        // Tag
+        ctx.fillStyle = step.color;
+        ctx.font = 'bold 15px "Plus Jakarta Sans", sans-serif';
+        ctx.fillText(`TAHAP ${step.no} • ${step.tag}`, cardX + 28, cardY + 22);
+
+        // Title
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 24px "Plus Jakarta Sans", sans-serif';
+        ctx.fillText(step.title, cardX + 28, cardY + 48);
+
+        // Description
+        ctx.fillStyle = '#cbd5e1';
+        ctx.font = '16px "Plus Jakarta Sans", sans-serif';
+        wrapText(ctx, step.desc, cardX + 28, cardY + 90, cardW - 56, 24);
+
+        // Key Output Box
+        ctx.fillStyle = 'rgba(2, 6, 23, 0.5)';
+        roundRect(ctx, cardX + 20, cardY + 160, cardW - 40, 42, 10, true, false);
+        ctx.fillStyle = '#38bdf8';
+        ctx.font = 'bold 14px "Plus Jakarta Sans", sans-serif';
+        ctx.fillText(step.key, cardX + 32, cardY + 172);
+      });
+
+      // 4. FOOTER BANNER
+      const footY = h - 140;
+      ctx.fillStyle = 'rgba(15, 23, 42, 0.9)';
+      roundRect(ctx, 80, footY, w - 160, 80, 16, true, false);
+
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'bold 20px "Plus Jakarta Sans", sans-serif';
+      ctx.fillText('⚛️  NUVOLEARN  —  Media Pembelajaran Fisika Modern Interaktif (Kurikulum Merdeka Fase F)', w / 2, footY + 28);
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = '15px "Plus Jakarta Sans", sans-serif';
+      ctx.fillText('Dikembangkan dengan HTML5, Tailwind CSS, KaTeX, Canvas API, dan Di-hosting pada GitHub Pages • 2026', w / 2, footY + 54);
+
+      // 5. DOWNLOAD AS PNG
+      const link = document.createElement('a');
+      link.download = 'Alur-Pengembangan-Nuvolearn.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+
+    // Helper functions
+    function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
+      ctx.beginPath();
+      ctx.moveTo(x + radius, y);
+      ctx.lineTo(x + width - radius, y);
+      ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+      ctx.lineTo(x + width, y + height - radius);
+      ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+      ctx.lineTo(x + radius, y + height);
+      ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+      ctx.lineTo(x, y + radius);
+      ctx.quadraticCurveTo(x, y, x + radius, y);
+      ctx.closePath();
+      if (fill) ctx.fill();
+      if (stroke) ctx.stroke();
+    }
+
+    function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
+      const words = text.split(' ');
+      let line = '';
+      for (let n = 0; n < words.length; n++) {
+        const testLine = line + words[n] + ' ';
+        const metrics = ctx.measureText(testLine);
+        const testWidth = metrics.width;
+        if (testWidth > maxWidth && n > 0) {
+          ctx.fillText(line, x, y);
+          line = words[n] + ' ';
+          y += lineHeight;
+        } else {
+          line = testLine;
+        }
+      }
+      ctx.fillText(line, x, y);
+    }
+  </script>
+</body>
+</html>

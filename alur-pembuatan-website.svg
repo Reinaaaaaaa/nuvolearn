@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1700" width="1200" height="1700">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b172a" />
+      <stop offset="50%" stop-color="#0e2347" />
+      <stop offset="100%" stop-color="#070f1d" />
+    </linearGradient>
+
+    <!-- Card Gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#13274c" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0b1a36" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Glowing Node Gradients -->
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4338ca" />
+    </linearGradient>
+    <linearGradient id="grad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+    <linearGradient id="grad5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="grad6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <!-- Filter Shadow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 900; }
+    .bold { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 700; }
+    .regular { font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; font-weight: 400; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="1700" fill="url(#bgGrad)" />
+
+  <!-- Ambient Lights / Orbs -->
+  <circle cx="600" cy="200" r="280" fill="#3b82f6" opacity="0.12" filter="url(#glow)" />
+  <circle cx="150" cy="800" r="220" fill="#6366f1" opacity="0.08" filter="url(#glow)" />
+  <circle cx="1050" cy="1300" r="250" fill="#10b981" opacity="0.09" filter="url(#glow)" />
+
+  <!-- Outer Tech Border -->
+  <rect x="25" y="25" width="1150" height="1650" rx="24" fill="none" stroke="#2563eb" stroke-width="2" stroke-opacity="0.35" />
+  <rect x="35" y="35" width="1130" height="1630" rx="16" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.08" />
+
+  <!-- ==================== HEADER ==================== -->
+  <g transform="translate(600, 100)">
+    <!-- Badge -->
+    <rect x="-190" y="0" width="380" height="34" rx="17" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.5" />
+    <text x="0" y="22" fill="#38bdf8" text-anchor="middle" class="bold" font-size="13" letter-spacing="2">
+      ROADMAP REKAYASA MEDIA PEMBELAJARAN
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="75" fill="#ffffff" text-anchor="middle" class="title" font-size="38" letter-spacing="-0.5">
+      ALUR PENGEMBANGAN <tspan fill="#38bdf8">NUVOLEARN</tspan>
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="112" fill="#94a3b8" text-anchor="middle" class="regular" font-size="16">
+      Proses Perancangan dari Kurikulum Merdeka Fase F, UI/UX Wireframe, hingga Rilis Web
+    </text>
+
+    <!-- Divider Line -->
+    <line x1="-480" y1="140" x2="480" y2="140" stroke="#3b82f6" stroke-opacity="0.3" stroke-width="1.5" />
+  </g>
+
+  <!-- Timeline Central Guide Line -->
+  <line x1="600" y1="280" x2="600" y2="1520" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="3" stroke-dasharray="8 8" />
+
+  <!-- ==================== TAHAP 1 ==================== -->
+  <g transform="translate(0, 270)">
+    <!-- Node Circle -->
+    <circle cx="600" cy="50" r="32" fill="url(#grad1)" filter="url(#glow)" opacity="0.3" />
+    <circle cx="600" cy="50" r="26" fill="url(#grad1)" stroke="#ffffff" stroke-width="2" />
+    <text x="600" y="58" fill="#ffffff" text-anchor="middle" class="title" font-size="18">01</text>
+
+    <!-- Content Card (Left) -->
+    <g transform="translate(60, 0)" filter="url(#boxShadow)">
+      <rect x="0" y="0" width="480" height="175" rx="18" fill="url(#cardGrad)" stroke="#3b82f6" stroke-width="1.5" stroke-opacity="0.5" />
+      <rect x="472" y="0" width="8" height="175" rx="4" fill="#3b82f6" />
+
+      <!-- Tag -->
+      <text x="25" y="32" fill="#60a5fa" class="bold" font-size="11" letter-spacing="1.5">TAHAP 01 • ANALISIS & PERENCANAAN</text>
+      <!-- Title -->
+      <text x="25" y="60" fill="#ffffff" class="bold" font-size="18">Analisis Kebutuhan & Kurikulum Merdeka</text>
+      <!-- Desc -->
+      <text x="25" y="85" fill="#cbd5e1" class="regular" font-size="13">
+        <tspan x="25" dy="0">Memetakan Capaian Pembelajaran (CP) Fisika Fase F</tspan>
+        <tspan x="25" dy="20">Kelas XII SMA. Menetapkan 6 modul esensial dari struktur</tspan>
+        <tspan x="25" dy="20">nukleon hingga proteksi radiasi sesuai standar BSKAP.</tspan>
+      </text>
+      <!-- Sub-card key output -->
+      <rect x="25" y="132" width="430" height="28" rx="6" fill="#071329" />
+      <text x="35" y="151" fill="#38bdf8" class="mono" font-size="11">✔ Silabus 6 Modul & Integrasi Profil Pelajar Pancasila</text>
+    </g>
+  </g>
+
+  <!-- ==================== TAHAP 2 ==================== -->
+  <g transform="translate(0, 480)">
+    <!-- Node Circle -->
+    <circle cx="600" cy="50" r="32" fill="url(#grad2)" filter="url(#glow)" opacity="0.3" />
+    <circle cx="600" cy="50" r="26" fill="url(#grad2)" stroke="#ffffff" stroke-width="2" />
+    <text x="600" y="58" fill="#ffffff" text-anchor="middle" class="title" font-size="18">02</text>
+
+    <!-- Content Card (Right) -->
+    <g transform="translate(660, 0)" filter="url(#boxShadow)">
+      <rect x="0" y="0" width="480" height="175" rx="18" fill="url(#cardGrad)" stroke="#06b6d4" stroke-width="1.5" stroke-opacity="0.5" />
+      <rect x="0" y="0" width="8" height="175" rx="4" fill="#06b6d4" />
+
+      <!-- Tag -->
+      <text x="28" y="32" fill="#22d3ee" class="bold" font-size="11" letter-spacing="1.5">TAHAP 02 • UI/UX WIREFRAMING</text>
+      <!-- Title -->
+      <text x="28" y="60" fill="#ffffff" class="bold" font-size="18">Desain Wireframe & Arsitektur Multi-Page</text>
+      <!-- Desc -->
+      <text x="28" y="85" fill="#cbd5e1" class="regular" font-size="13">
+        <tspan x="28" dy="0">Menerjemahkan sketsa wireframe 5 panel ke dalam</tspan>
+        <tspan x="28" dy="20">arsitektur web modular. Memecah konten panjang ke</tspan>
+        <tspan x="28" dy="20">halaman terpisah (materi-1 s.d. 6) agar fokus belajar.</tspan>
+      </text>
+      <!-- Sub-card key output -->
+      <rect x="25" y="132" width="430" height="28" rx="6" fill="#071329" />
+      <text x="35" y="151" fill="#22d3ee" class="mono" font-size="11">✔ Wireframe 5 Panel & Layout Responsif Smartphone/Laptop</text>
+    </g>
+  </g>
+
+  <!-- ==================== TAHAP 3 ==================== -->
+  <g transform="translate(0, 690)">
+    <!-- Node Circle -->
+    <circle cx="600" cy="50" r="32" fill="url(#grad3)" filter="url(#glow)" opacity="0.3" />
+    <circle cx="600" cy="50" r="26" fill="url(#grad3)" stroke="#ffffff" stroke-width="2" />
+    <text x="600" y="58" fill="#ffffff" text-anchor="middle" class="title" font-size="18">03</text>
+
+    <!-- Content Card (Left) -->
+    <g transform="translate(60, 0)" filter="url(#boxShadow)">
+      <rect x="0" y="0" width="480" height="175" rx="18" fill="url(#cardGrad)" stroke="#6366f1" stroke-width="1.5" stroke-opacity="0.5" />
+      <rect x="472" y="0" width="8" height="175" rx="4" fill="#6366f1" />
+
+      <!-- Tag -->
+      <text x="25" y="32" fill="#818cf8" class="bold" font-size="11" letter-spacing="1.5">TAHAP 03 • NOTASI LATEX & SCIENTIFIC</text>
+      <!-- Title -->
+      <text x="25" y="60" fill="#ffffff" class="bold" font-size="18">Integrasi Formula KaTeX & Terminologi</text>
+      <!-- Desc -->
+      <text x="25" y="85" fill="#cbd5e1" class="regular" font-size="13">
+        <tspan x="25" dy="0">Penerapan engine KaTeX untuk perumusan defek massa,</tspan>
+        <tspan x="25" dy="20">energi ikat Eb/A, dan peluruhan radioaktif. Standardisasi</tspan>
+        <tspan x="25" dy="20">sintaks preskrip isotop baku tanpa pesan galat.</tspan>
+      </text>
+      <!-- Sub-card key output -->
+      <rect x="25" y="132" width="430" height="28" rx="6" fill="#071329" />
+      <text x="35" y="151" fill="#818cf8" class="mono" font-size="11">✔ Eliminasi 100% Error KaTeX & Bahasa Akademik Rigor</text>
+    </g>
+  </g>
+
+  <!-- ==================== TAHAP 4 ==================== -->
+  <g transform="translate(0, 900)">
+    <!-- Node Circle -->
+    <circle cx="600" cy="50" r="32" fill="url(#grad4)" filter="url(#glow)" opacity="0.3" />
+    <circle cx="600" cy="50" r="26" fill="url(#grad4)" stroke="#ffffff" stroke-width="2" />
+    <text x="600" y="58" fill="#ffffff" text-anchor="middle" class="title" font-size="18">04</text>
+
+    <!-- Content Card (Right) -->
+    <g transform="translate(660, 0)" filter="url(#boxShadow)">
+      <rect x="0" y="0" width="480" height="175" rx="18" fill="url(#cardGrad)" stroke="#a855f7" stroke-width="1.5" stroke-opacity="0.5" />
+      <rect x="0" y="0" width="8" height="175" rx="4" fill="#a855f7" />
+
+      <!-- Tag -->
+      <text x="28" y="32" fill="#c084fc" class="bold" font-size="11" letter-spacing="1.5">TAHAP 04 • VIRTUAL LAB SIMULATION</text>
+      <!-- Title -->
+      <text x="28" y="60" fill="#ffffff" class="bold" font-size="18">Laboratorium Virtual & Kanvas Interaktif</text>
+      <!-- Desc -->
+      <text x="28" y="85" fill="#cbd5e1" class="regular" font-size="13">
+        <tspan x="28" dy="0">Rekayasa modul interaktif: Build a Nucleus (partikel 3D</tspan>
+        <tspan x="28" dy="20">proton/neutron), Lab Daya Tembus Radiasi, dan Reaksi</tspan>
+        <tspan x="28" dy="20">Fisi Berantai U-235 dengan proteksi null-safety kanvas.</tspan>
+      </text>
+      <!-- Sub-card key output -->
+      <rect x="25" y="132" width="430" height="28" rx="6" fill="#071329" />
+      <text x="35" y="151" fill="#c084fc" class="mono" font-size="11">✔ Model Nukleon 3D, Preset Unsur & Simulasi Partikel 60 FPS</text>
+    </g>
+  </g>
+
+  <!-- ==================== TAHAP 5 ==================== -->
+  <g transform="translate(0, 1110)">
+    <!-- Node Circle -->
+    <circle cx="600" cy="50" r="32" fill="url(#grad5)" filter="url(#glow)" opacity="0.3" />
+    <circle cx="600" cy="50" r="26" fill="url(#grad5)" stroke="#ffffff" stroke-width="2" />
+    <text x="600" y="58" fill="#ffffff" text-anchor="middle" class="title" font-size="18">05</text>
+
+    <!-- Content Card (Left) -->
+    <g transform="translate(60, 0)" filter="url(#boxShadow)">
+      <rect x="0" y="0" width="480" height="175" rx="18" fill="url(#cardGrad)" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5" />
+      <rect x="472" y="0" width="8" height="175" rx="4" fill="#f59e0b" />
+
+      <!-- Tag -->
+      <text x="25" y="32" fill="#fbbf24" class="bold" font-size="11" letter-spacing="1.5">TAHAP 05 • ASESMEN FORMATIF</text>
+      <!-- Title -->
+      <text x="25" y="60" fill="#ffffff" class="bold" font-size="18">Sistem Kuis Stepper & Gamifikasi</text>
+      <!-- Desc -->
+      <text x="25" y="85" fill="#cbd5e1" class="regular" font-size="13">
+        <tspan x="25" dy="0">Merancang kuis interaktif dengan 1 soal per layar,</tspan>
+        <tspan x="25" dy="20">maskot atom toga, kotak tips 'Ingat!', perbaikan bug</tspan>
+        <tspan x="25" dy="20">label radio opsi, dan umpan balik pembahasan seketika.</tspan>
+      </text>
+      <!-- Sub-card key output -->
+      <rect x="25" y="132" width="430" height="28" rx="6" fill="#071329" />
+      <text x="35" y="151" fill="#fbbf24" class="mono" font-size="11">✔ Umpan Balik Ilmiah Otomatis & Pelacak Skor Akurat</text>
+    </g>
+  </g>
+
+  <!-- ==================== TAHAP 6 ==================== -->
+  <g transform="translate(0, 1320)">
+    <!-- Node Circle -->
+    <circle cx="600" cy="50" r="32" fill="url(#grad6)" filter="url(#glow)" opacity="0.3" />
+    <circle cx="600" cy="50" r="26" fill="url(#grad6)" stroke="#ffffff" stroke-width="2" />
+    <text x="600" y="58" fill="#ffffff" text-anchor="middle" class="title" font-size="18">06</text>
+
+    <!-- Content Card (Right) -->
+    <g transform="translate(660, 0)" filter="url(#boxShadow)">
+      <rect x="0" y="0" width="480" height="175" rx="18" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.5" />
+      <rect x="0" y="0" width="8" height="175" rx="4" fill="#10b981" />
+
+      <!-- Tag -->
+      <text x="28" y="32" fill="#34d399" class="bold" font-size="11" letter-spacing="1.5">TAHAP 06 • CP KURIKULUM & DEPLOYMENT</text>
+      <!-- Title -->
+      <text x="28" y="60" fill="#ffffff" class="bold" font-size="18">Penyempurnaan CP & Rilis GitHub Pages</text>
+      <!-- Desc -->
+      <text x="28" y="85" fill="#cbd5e1" class="regular" font-size="13">
+        <tspan x="28" dy="0">Menambahkan bagian resmi Capaian Pembelajaran (CP)</tspan>
+        <tspan x="28" dy="20">dan Glosarium di panduan.html, sinkronisasi tautan</tspan>
+        <tspan x="28" dy="20">navigasi, dan publikasi web secara live ke GitHub Pages.</tspan>
+      </text>
+      <!-- Sub-card key output -->
+      <rect x="25" y="132" width="430" height="28" rx="6" fill="#071329" />
+      <text x="35" y="151" fill="#34d399" class="mono" font-size="11">✔ Website Live di GitHub Pages Siap Pakai di Kelas</text>
+    </g>
+  </g>
+
+  <!-- ==================== FOOTER ==================== -->
+  <g transform="translate(600, 1600)">
+    <rect x="-480" y="0" width="960" height="48" rx="12" fill="#0a1526" stroke="#1e293b" />
+    <text x="0" y="30" fill="#94a3b8" text-anchor="middle" class="regular" font-size="13">
+      ⚛️ <tspan fill="#ffffff" class="bold">NUVOLEARN</tspan> — Media Pembelajaran Fisika Modern Interaktif (Kurikulum Merdeka Fase F) • 2026
+    </text>
+  </g>
+
+</svg>

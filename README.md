@@ -1,13 +1,13 @@
-# NUCLEAR LAB - Media Pembelajaran Digital Fisika Inti
+# NUVOLEARN - Media Pembelajaran Digital Fisika Inti
 
-Platform media pembelajaran interaktif fisika inti atom yang dirancang khusus mengikuti wireframe UI/UX **NUCLEAR LAB** (Sesuai Kurikulum Merdeka Fase F / SMA Kelas XII).
+Platform media pembelajaran interaktif fisika inti atom yang dirancang khusus mengikuti wireframe UI/UX **NUVOLEARN** (Sesuai Kurikulum Merdeka Fase F / SMA Kelas XII).
 
 ---
 
 ## 🎨 Halaman Utama & Struktur Navigasi (Sesuai Wireframe Desain)
 
 ### 1. Halaman Beranda (`index.html`)
-* Hero banner bertema biru modern cerah: **"NUCLEAR LAB - Misi Menjelajahi Inti Atom"**.
+* Hero banner bertema biru modern cerah: **"NUVOLEARN - Misi Menjelajahi Inti Atom"**.
 * Ilustrasi atom 3D dengan nukleon mengorbit dan kutipan *"Small particles, Big impact"*.
 * Tombol CTA: **Mulai Eksplorasi →** dan **Lihat Panduan**.
 * 4 Kartu Fitur: *Materi Interaktif*, *Simulasi PhET*, *Kuis & Tantangan*, dan *Sertifikat*.
